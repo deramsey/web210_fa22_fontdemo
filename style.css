@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap');
+
+@font-face {
+    font-family: "Yellow Sun";
+    src: url("sun.woff");
+}
+
+@font-face {
+    font-family: "arrows";
+    src: url("arrows.woff");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    display:grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background: #252525;
+}
+
+section{
+    width: 70%;
+    aspect-ratio: 16/9;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    padding: 24px;
+}
+
+section > h1{
+    font-family: "Yellow Sun";
+    font-size: 4.8em;
+    margin: 0;
+    margin-bottom: .5em;
+    color: #999900;
+    letter-spacing: .1em;
+    text-decoration: underline wavy;
+}
+
+section > h1::before{
+    content: "X";
+    font-size: 2.4em;
+    position: absolute;
+    left: .8em;
+    top: .6em;
+    color: #999900;
+    font-family: "arrows"
+}
+
+section > p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    letter-spacing: .05em;
+}
+
+strong{
+    font-weight: 700;
+    letter-spacing: .075em;
+}
+
